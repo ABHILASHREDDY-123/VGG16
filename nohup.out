@@ -1,0 +1,218 @@
+[NbConvertApp] Converting notebook CNN-VGG16.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+2024-01-17 15:37:37.734618: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: $/var/lib/docker/overlay2/18478643efb701f8f9328b366f3a90e0c665abd53b5648d82e2f2485dad3916c/merged/usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudart.so.11.0
+2024-01-17 15:37:37.734658: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-01-17 15:54:47.188778: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/cv2/../../lib:$/var/lib/docker/overlay2/18478643efb701f8f9328b366f3a90e0c665abd53b5648d82e2f2485dad3916c/merged/usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudart.so.11.0
+2024-01-17 15:54:47.189150: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublas.so.11'; dlerror: libcublas.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/cv2/../../lib:$/var/lib/docker/overlay2/18478643efb701f8f9328b366f3a90e0c665abd53b5648d82e2f2485dad3916c/merged/usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudart.so.11.0
+2024-01-17 15:54:47.189360: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublasLt.so.11'; dlerror: libcublasLt.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/cv2/../../lib:$/var/lib/docker/overlay2/18478643efb701f8f9328b366f3a90e0c665abd53b5648d82e2f2485dad3916c/merged/usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudart.so.11.0
+2024-01-17 15:54:47.211373: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusolver.so.11'; dlerror: libcusolver.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/cv2/../../lib:$/var/lib/docker/overlay2/18478643efb701f8f9328b366f3a90e0c665abd53b5648d82e2f2485dad3916c/merged/usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudart.so.11.0
+2024-01-17 15:54:47.211532: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusparse.so.11'; dlerror: libcusparse.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/cv2/../../lib:$/var/lib/docker/overlay2/18478643efb701f8f9328b366f3a90e0c665abd53b5648d82e2f2485dad3916c/merged/usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudart.so.11.0
+2024-01-17 15:54:47.211896: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudnn.so.8'; dlerror: libcudnn.so.8: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/cv2/../../lib:$/var/lib/docker/overlay2/18478643efb701f8f9328b366f3a90e0c665abd53b5648d82e2f2485dad3916c/merged/usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudart.so.11.0
+2024-01-17 15:54:47.211922: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1835] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2024-01-17 15:54:47.215095: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Traceback (most recent call last):
+  File "/raid/home/dgx1442/finalYearProject/venv/bin/jupyter-nbconvert", line 8, in <module>
+    sys.exit(main())
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/jupyter_core/application.py", line 264, in launch_instance
+    return super(JupyterApp, cls).launch_instance(argv=argv, **kwargs)
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/traitlets/config/application.py", line 664, in launch_instance
+    app.start()
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbconvert/nbconvertapp.py", line 350, in start
+    self.convert_notebooks()
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbconvert/nbconvertapp.py", line 524, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbconvert/nbconvertapp.py", line 489, in convert_single_notebook
+    output, resources = self.export_single_notebook(notebook_filename, resources, input_buffer=input_buffer)
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbconvert/nbconvertapp.py", line 418, in export_single_notebook
+    output, resources = self.exporter.from_filename(notebook_filename, resources=resources)
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbconvert/exporters/exporter.py", line 181, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbconvert/exporters/exporter.py", line 199, in from_file
+    return self.from_notebook_node(nbformat.read(file_stream, as_version=4), resources=resources, **kw)
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbconvert/exporters/notebook.py", line 32, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbconvert/exporters/exporter.py", line 143, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbconvert/exporters/exporter.py", line 318, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbconvert/preprocessors/base.py", line 47, in __call__
+    return self.preprocess(nb, resources)
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py", line 79, in preprocess
+    self.execute()
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbclient/util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbclient/util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "/usr/lib/python3.6/asyncio/base_events.py", line 484, in run_until_complete
+    return future.result()
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbclient/client.py", line 560, in async_execute
+    cell, index, execution_count=self.code_cells_executed + 1
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py", line 123, in async_execute_cell
+    cell, resources = self.preprocess_cell(cell, self.resources, cell_index)
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py", line 146, in preprocess_cell
+    cell = run_sync(NotebookClient.async_execute_cell)(self, cell, index, store_history=self.store_history)
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbclient/util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbclient/util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nest_asyncio.py", line 99, in run_until_complete
+    return f.result()
+  File "/usr/lib/python3.6/asyncio/tasks.py", line 180, in _step
+    result = coro.send(None)
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbclient/client.py", line 854, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "/raid/home/dgx1442/finalYearProject/venv/lib/python3.6/site-packages/nbclient/client.py", line 756, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+starting_time = time.time()
+
+history = model.fit(X_train,Y_train,epochs=Epochs,batch_size=32,validation_split=0.2)
+
+ending_time = time.time()
+total_time = ending_time - starting_time
+total_time/=60
+
+print("Time taken fit : ",total_time," min")
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mMemoryError[0m                               Traceback (most recent call last)
+[0;32m<ipython-input-1-b980256bb609>[0m in [0;36m<module>[0;34m[0m
+[1;32m      1[0m [0mstarting_time[0m [0;34m=[0m [0mtime[0m[0;34m.[0m[0mtime[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      2[0m [0;34m[0m[0m
+[0;32m----> 3[0;31m [0mhistory[0m [0;34m=[0m [0mmodel[0m[0;34m.[0m[0mfit[0m[0;34m([0m[0mX_train[0m[0;34m,[0m[0mY_train[0m[0;34m,[0m[0mepochs[0m[0;34m=[0m[0mEpochs[0m[0;34m,[0m[0mbatch_size[0m[0;34m=[0m[0;36m32[0m[0;34m,[0m[0mvalidation_split[0m[0;34m=[0m[0;36m0.2[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      4[0m [0;34m[0m[0m
+[1;32m      5[0m [0mending_time[0m [0;34m=[0m [0mtime[0m[0;34m.[0m[0mtime[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/finalYearProject/venv/lib/python3.6/site-packages/keras/engine/training.py[0m in [0;36mfit[0;34m(self, x, y, batch_size, epochs, verbose, callbacks, validation_split, validation_data, shuffle, class_weight, sample_weight, initial_epoch, steps_per_epoch, validation_steps, validation_batch_size, validation_freq, max_queue_size, workers, use_multiprocessing)[0m
+[1;32m   1146[0m           [0muse_multiprocessing[0m[0;34m=[0m[0muse_multiprocessing[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1147[0m           [0mmodel[0m[0;34m=[0m[0mself[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 1148[0;31m           steps_per_execution=self._steps_per_execution)
+[0m[1;32m   1149[0m [0;34m[0m[0m
+[1;32m   1150[0m       [0;31m# Container that configures and calls `tf.keras.Callback`s.[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/finalYearProject/venv/lib/python3.6/site-packages/keras/engine/data_adapter.py[0m in [0;36mget_data_handler[0;34m(*args, **kwargs)[0m
+[1;32m   1381[0m   [0;32mif[0m [0mgetattr[0m[0;34m([0m[0mkwargs[0m[0;34m[[0m[0;34m"model"[0m[0;34m][0m[0;34m,[0m [0;34m"_cluster_coordinator"[0m[0;34m,[0m [0;32mNone[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1382[0m     [0;32mreturn[0m [0m_ClusterCoordinatorDataHandler[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 1383[0;31m   [0;32mreturn[0m [0mDataHandler[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1384[0m [0;34m[0m[0m
+[1;32m   1385[0m [0;34m[0m[0m
+
+[0;32m~/finalYearProject/venv/lib/python3.6/site-packages/keras/engine/data_adapter.py[0m in [0;36m__init__[0;34m(self, x, y, sample_weight, batch_size, steps_per_epoch, initial_epoch, epochs, shuffle, class_weight, max_queue_size, workers, use_multiprocessing, model, steps_per_execution, distribute)[0m
+[1;32m   1148[0m         [0muse_multiprocessing[0m[0;34m=[0m[0muse_multiprocessing[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1149[0m         [0mdistribution_strategy[0m[0;34m=[0m[0mtf[0m[0;34m.[0m[0mdistribute[0m[0;34m.[0m[0mget_strategy[0m[0;34m([0m[0;34m)[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 1150[0;31m         model=model)
+[0m[1;32m   1151[0m [0;34m[0m[0m
+[1;32m   1152[0m     [0mstrategy[0m [0;34m=[0m [0mtf[0m[0;34m.[0m[0mdistribute[0m[0;34m.[0m[0mget_strategy[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/finalYearProject/venv/lib/python3.6/site-packages/keras/engine/data_adapter.py[0m in [0;36m__init__[0;34m(self, x, y, sample_weights, sample_weight_modes, batch_size, epochs, steps, shuffle, **kwargs)[0m
+[1;32m    228[0m                **kwargs):
+[1;32m    229[0m     [0msuper[0m[0;34m([0m[0mTensorLikeDataAdapter[0m[0;34m,[0m [0mself[0m[0;34m)[0m[0;34m.[0m[0m__init__[0m[0;34m([0m[0mx[0m[0;34m,[0m [0my[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 230[0;31m     [0mx[0m[0;34m,[0m [0my[0m[0;34m,[0m [0msample_weights[0m [0;34m=[0m [0m_process_tensorlike[0m[0;34m([0m[0;34m([0m[0mx[0m[0;34m,[0m [0my[0m[0;34m,[0m [0msample_weights[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    231[0m     sample_weight_modes = broadcast_sample_weight_modes(
+[1;32m    232[0m         sample_weights, sample_weight_modes)
+
+[0;32m~/finalYearProject/venv/lib/python3.6/site-packages/keras/engine/data_adapter.py[0m in [0;36m_process_tensorlike[0;34m(inputs)[0m
+[1;32m   1029[0m     [0;32mreturn[0m [0mx[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1030[0m [0;34m[0m[0m
+[0;32m-> 1031[0;31m   [0minputs[0m [0;34m=[0m [0mtf[0m[0;34m.[0m[0mnest[0m[0;34m.[0m[0mmap_structure[0m[0;34m([0m[0m_convert_numpy_and_scipy[0m[0;34m,[0m [0minputs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1032[0m   [0;32mreturn[0m [0mtf[0m[0;34m.[0m[0m__internal__[0m[0;34m.[0m[0mnest[0m[0;34m.[0m[0mlist_to_tuple[0m[0;34m([0m[0minputs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1033[0m [0;34m[0m[0m
+
+[0;32m~/finalYearProject/venv/lib/python3.6/site-packages/tensorflow/python/util/nest.py[0m in [0;36mmap_structure[0;34m(func, *structure, **kwargs)[0m
+[1;32m    867[0m [0;34m[0m[0m
+[1;32m    868[0m   return pack_sequence_as(
+[0;32m--> 869[0;31m       [0mstructure[0m[0;34m[[0m[0;36m0[0m[0;34m][0m[0;34m,[0m [0;34m[[0m[0mfunc[0m[0;34m([0m[0;34m*[0m[0mx[0m[0;34m)[0m [0;32mfor[0m [0mx[0m [0;32min[0m [0mentries[0m[0;34m][0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    870[0m       expand_composites=expand_composites)
+[1;32m    871[0m [0;34m[0m[0m
+
+[0;32m~/finalYearProject/venv/lib/python3.6/site-packages/tensorflow/python/util/nest.py[0m in [0;36m<listcomp>[0;34m(.0)[0m
+[1;32m    867[0m [0;34m[0m[0m
+[1;32m    868[0m   return pack_sequence_as(
+[0;32m--> 869[0;31m       [0mstructure[0m[0;34m[[0m[0;36m0[0m[0;34m][0m[0;34m,[0m [0;34m[[0m[0mfunc[0m[0;34m([0m[0;34m*[0m[0mx[0m[0;34m)[0m [0;32mfor[0m [0mx[0m [0;32min[0m [0mentries[0m[0;34m][0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    870[0m       expand_composites=expand_composites)
+[1;32m    871[0m [0;34m[0m[0m
+
+[0;32m~/finalYearProject/venv/lib/python3.6/site-packages/keras/engine/data_adapter.py[0m in [0;36m_convert_numpy_and_scipy[0;34m(x)[0m
+[1;32m   1024[0m       [0;32mif[0m [0missubclass[0m[0;34m([0m[0mx[0m[0;34m.[0m[0mdtype[0m[0;34m.[0m[0mtype[0m[0;34m,[0m [0mnp[0m[0;34m.[0m[0mfloating[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1025[0m         [0mdtype[0m [0;34m=[0m [0mbackend[0m[0;34m.[0m[0mfloatx[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 1026[0;31m       [0;32mreturn[0m [0mtf[0m[0;34m.[0m[0mconvert_to_tensor[0m[0;34m([0m[0mx[0m[0;34m,[0m [0mdtype[0m[0;34m=[0m[0mdtype[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1027[0m     [0;32melif[0m [0m_is_scipy_sparse[0m[0;34m([0m[0mx[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1028[0m       [0;32mreturn[0m [0m_scipy_sparse_to_sparse_tensor[0m[0;34m([0m[0mx[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/finalYearProject/venv/lib/python3.6/site-packages/tensorflow/python/util/dispatch.py[0m in [0;36mwrapper[0;34m(*args, **kwargs)[0m
+[1;32m    204[0m     [0;34m"""Call target, and fall back on dispatchers if there is a TypeError."""[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    205[0m     [0;32mtry[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 206[0;31m       [0;32mreturn[0m [0mtarget[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    207[0m     [0;32mexcept[0m [0;34m([0m[0mTypeError[0m[0;34m,[0m [0mValueError[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    208[0m       [0;31m# Note: convert_to_eager_tensor currently raises a ValueError, not a[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/finalYearProject/venv/lib/python3.6/site-packages/tensorflow/python/framework/ops.py[0m in [0;36mconvert_to_tensor_v2_with_dispatch[0;34m(value, dtype, dtype_hint, name)[0m
+[1;32m   1429[0m   """
+[1;32m   1430[0m   return convert_to_tensor_v2(
+[0;32m-> 1431[0;31m       value, dtype=dtype, dtype_hint=dtype_hint, name=name)
+[0m[1;32m   1432[0m [0;34m[0m[0m
+[1;32m   1433[0m [0;34m[0m[0m
+
+[0;32m~/finalYearProject/venv/lib/python3.6/site-packages/tensorflow/python/framework/ops.py[0m in [0;36mconvert_to_tensor_v2[0;34m(value, dtype, dtype_hint, name)[0m
+[1;32m   1439[0m       [0mname[0m[0;34m=[0m[0mname[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1440[0m       [0mpreferred_dtype[0m[0;34m=[0m[0mdtype_hint[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 1441[0;31m       as_ref=False)
+[0m[1;32m   1442[0m [0;34m[0m[0m
+[1;32m   1443[0m [0;34m[0m[0m
+
+[0;32m~/finalYearProject/venv/lib/python3.6/site-packages/tensorflow/python/profiler/trace.py[0m in [0;36mwrapped[0;34m(*args, **kwargs)[0m
+[1;32m    161[0m         [0;32mwith[0m [0mTrace[0m[0;34m([0m[0mtrace_name[0m[0;34m,[0m [0;34m**[0m[0mtrace_kwargs[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    162[0m           [0;32mreturn[0m [0mfunc[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 163[0;31m       [0;32mreturn[0m [0mfunc[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    164[0m [0;34m[0m[0m
+[1;32m    165[0m     [0;32mreturn[0m [0mwrapped[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/finalYearProject/venv/lib/python3.6/site-packages/tensorflow/python/framework/ops.py[0m in [0;36mconvert_to_tensor[0;34m(value, dtype, name, as_ref, preferred_dtype, dtype_hint, ctx, accepted_result_types)[0m
+[1;32m   1564[0m [0;34m[0m[0m
+[1;32m   1565[0m     [0;32mif[0m [0mret[0m [0;32mis[0m [0;32mNone[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 1566[0;31m       [0mret[0m [0;34m=[0m [0mconversion_func[0m[0;34m([0m[0mvalue[0m[0;34m,[0m [0mdtype[0m[0;34m=[0m[0mdtype[0m[0;34m,[0m [0mname[0m[0;34m=[0m[0mname[0m[0;34m,[0m [0mas_ref[0m[0;34m=[0m[0mas_ref[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1567[0m [0;34m[0m[0m
+[1;32m   1568[0m     [0;32mif[0m [0mret[0m [0;32mis[0m [0mNotImplemented[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/finalYearProject/venv/lib/python3.6/site-packages/tensorflow/python/framework/tensor_conversion_registry.py[0m in [0;36m_default_conversion_function[0;34m(***failed resolving arguments***)[0m
+[1;32m     50[0m [0;32mdef[0m [0m_default_conversion_function[0m[0;34m([0m[0mvalue[0m[0;34m,[0m [0mdtype[0m[0;34m,[0m [0mname[0m[0;34m,[0m [0mas_ref[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     51[0m   [0;32mdel[0m [0mas_ref[0m  [0;31m# Unused.[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 52[0;31m   [0;32mreturn[0m [0mconstant_op[0m[0;34m.[0m[0mconstant[0m[0;34m([0m[0mvalue[0m[0;34m,[0m [0mdtype[0m[0;34m,[0m [0mname[0m[0;34m=[0m[0mname[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     53[0m [0;34m[0m[0m
+[1;32m     54[0m [0;34m[0m[0m
+
+[0;32m~/finalYearProject/venv/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py[0m in [0;36mconstant[0;34m(value, dtype, shape, name)[0m
+[1;32m    270[0m   """
+[1;32m    271[0m   return _constant_impl(value, dtype, shape, name, verify_shape=False,
+[0;32m--> 272[0;31m                         allow_broadcast=True)
+[0m[1;32m    273[0m [0;34m[0m[0m
+[1;32m    274[0m [0;34m[0m[0m
+
+[0;32m~/finalYearProject/venv/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py[0m in [0;36m_constant_impl[0;34m(value, dtype, shape, name, verify_shape, allow_broadcast)[0m
+[1;32m    281[0m       [0;32mwith[0m [0mtrace[0m[0;34m.[0m[0mTrace[0m[0;34m([0m[0;34m"tf.constant"[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    282[0m         [0;32mreturn[0m [0m_constant_eager_impl[0m[0;34m([0m[0mctx[0m[0;34m,[0m [0mvalue[0m[0;34m,[0m [0mdtype[0m[0;34m,[0m [0mshape[0m[0;34m,[0m [0mverify_shape[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 283[0;31m     [0;32mreturn[0m [0m_constant_eager_impl[0m[0;34m([0m[0mctx[0m[0;34m,[0m [0mvalue[0m[0;34m,[0m [0mdtype[0m[0;34m,[0m [0mshape[0m[0;34m,[0m [0mverify_shape[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    284[0m [0;34m[0m[0m
+[1;32m    285[0m   [0mg[0m [0;34m=[0m [0mops[0m[0;34m.[0m[0mget_default_graph[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/finalYearProject/venv/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py[0m in [0;36m_constant_eager_impl[0;34m(ctx, value, dtype, shape, verify_shape)[0m
+[1;32m    306[0m [0;32mdef[0m [0m_constant_eager_impl[0m[0;34m([0m[0mctx[0m[0;34m,[0m [0mvalue[0m[0;34m,[0m [0mdtype[0m[0;34m,[0m [0mshape[0m[0;34m,[0m [0mverify_shape[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    307[0m   [0;34m"""Creates a constant on the current device."""[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 308[0;31m   [0mt[0m [0;34m=[0m [0mconvert_to_eager_tensor[0m[0;34m([0m[0mvalue[0m[0;34m,[0m [0mctx[0m[0;34m,[0m [0mdtype[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    309[0m   [0;32mif[0m [0mshape[0m [0;32mis[0m [0;32mNone[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    310[0m     [0;32mreturn[0m [0mt[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/finalYearProject/venv/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py[0m in [0;36mconvert_to_eager_tensor[0;34m(value, ctx, dtype)[0m
+[1;32m    104[0m       [0mdtype[0m [0;34m=[0m [0mdtypes[0m[0;34m.[0m[0mas_dtype[0m[0;34m([0m[0mdtype[0m[0;34m)[0m[0;34m.[0m[0mas_datatype_enum[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    105[0m   [0mctx[0m[0;34m.[0m[0mensure_initialized[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 106[0;31m   [0;32mreturn[0m [0mops[0m[0;34m.[0m[0mEagerTensor[0m[0;34m([0m[0mvalue[0m[0;34m,[0m [0mctx[0m[0;34m.[0m[0mdevice_name[0m[0;34m,[0m [0mdtype[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    107[0m [0;34m[0m[0m
+[1;32m    108[0m [0;34m[0m[0m
+
+[0;31mMemoryError[0m: Unable to allocate 38.6 GiB for an array with shape (68800, 224, 224, 3) and data type float32
+MemoryError: Unable to allocate 38.6 GiB for an array with shape (68800, 224, 224, 3) and data type float32
+
